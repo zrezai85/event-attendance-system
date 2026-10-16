@@ -1,12 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    {% block content %}
-    {%endblock content%}
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>zahra rezaei site</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #F8FAFC;
+        }   
+        .site-header {
+            width: 100%;
+            height: 65px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            padding: 10px 32px;
+            flex-direction: row;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            
+        }
+        .site-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0F172A;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: #64748B;
+            font-size: 16px;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+        .menu-item:hover {
+            color: #2563EB;
+        }
+        
+        .menu-item.active {
+            color: #2563EB;
+        }
+
+        .header-menu {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+        <div class="site-title">
+            سیستم مدیریت پذیرش رویدادها
+        </div>
+        <nav class="header-menu">
+          <a href="#" class="menu-item">داشبورد</a>
+          <a href="#" class="menu-item">لیست شرکت کنندگان </a>
+          <a href="#" class="menu-item">مدیریت رویدادها</a>
+        </nav>
+
+    </header>
+    <div class='container'>
+        {%block content %}
+     {%endblock content%}
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>

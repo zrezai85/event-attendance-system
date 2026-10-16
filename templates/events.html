@@ -1,0 +1,245 @@
+{% extends "base.html" %}
+
+{% block content%}
+    {% comment %} <ul>
+    {% for message in message_list %}
+        <li>{{ message.text}}</li>
+    {% endfor %}
+    </ul> {% endcomment %}
+    <style>
+    .events-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 588px), 588px));
+        justify-content: center;
+        gap: 24px;
+
+        padding: 32px;
+        box-sizing: border-box;
+        direction: rtl;
+    }
+
+    .event-card {
+        width: 100%;
+        max-width: 588px;
+        height: 260px;
+        box-sizing: border-box;
+
+        background-color: #FFFFFF;
+        border-radius: 12px;
+        padding: 28px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .event-name {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 700;
+        color: #0F172A;
+        line-height: 1.5;
+    }
+
+    .event-date {
+        margin-top: 12px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #64748B;
+    }
+
+    .event-button {
+        width: 220px;
+        max-width: 100%;
+        height: 48px;
+        box-sizing: border-box;
+
+        margin-top: auto;
+        align-self: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #2563EB;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+
+        border-radius: 8px;
+        transition: background-color 0.2s ease;
+    }
+
+    .event-button:hover {
+        background-color: #1D4ED8;
+    }
+
+    @media (max-width: 600px) {
+        .events-grid {
+            padding: 20px 16px;
+            gap: 20px;
+        }
+
+        .event-card {
+            padding: 24px;
+        }
+
+        .event-name {
+            font-size: 26px;
+        }
+
+        .event-date {
+            font-size: 18px;
+        }
+    }
+</style>
+
+<section class="events-grid">
+
+    <article class="event-card">
+        <h2 class="event-name">مدیریت نرم افزار در بازی سازی </h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۷/۲۵</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">بازی سازی با unity و c#</h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۷/۲۶</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">دنیای بازی از دریچه صدا </h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۷/۲۷</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name"> پیکس آرت  </h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۷/۲۹</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">دیجیتال پینت مقدماتی با فتوشاپ </h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۳</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">نقاشی دیجیتال در گیم </h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۴</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">کارخانه بازی سازی با هوش مصنوعی </h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۶</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">نقاشی دیجیتال با موبایل</h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۹</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">بازی های مستقل </h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۱۰</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">VFX</h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۱۰</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">دیزاین</h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۱۳</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">این کارو کی باید انجام بده ؟؟</h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۱۴</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">چگونه از بازی سازی درامد زایی کنیم ؟</h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۱۶</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">فقط بازی نساز</h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۱۸</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name">چگونه در گیم جم اول شویم ؟</h2>
+        <p class="event-date">تاریخ: ۱۴۰۵/۰۸/۱۹</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name"> اختتامیه روز اول  </h2>
+        <p class="event-date">تاریخ:</p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name"> اختتامیه روز دوم</h2>
+        <p class="event-date">تاریخ: </p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+    <article class="event-card">
+        <h2 class="event-name"> اختتامیه روز سوم  </h2>
+        <p class="event-date">تاریخ: </p>
+        <a href="#" class="event-button">
+            ورود به صفحه پذیرش
+        </a>
+    </article>
+
+</section>
+{% endblock content%}

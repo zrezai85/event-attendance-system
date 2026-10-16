@@ -20,5 +20,6 @@ from message import views
 from message.views import MessageView
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',MessageView.as_view(), name='home'),
+    path('events/', MessageView.as_view(), name='events'),
+    path('participants/', MessageView.as_view(), name='participants'),
 ]
